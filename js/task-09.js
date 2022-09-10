@@ -10,8 +10,9 @@ const widget = document.querySelector('.widget');
 
 
 const onClickChangeColor = () => {
-  colorName.textContent = getRandomHexColor();
-  widget.style.backgroundColor = getRandomHexColor();
+  const randomColor = getRandomHexColor();
+  colorName.textContent = randomColor;
+  widget.style.backgroundColor = randomColor;
 }
 
 ChangeColorBtn.addEventListener('click', onClickChangeColor);
